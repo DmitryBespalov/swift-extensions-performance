@@ -12,6 +12,8 @@ rake benchmark
 
 On my machine it produces the following results:
 
+![Benchmark results](results_chart.png?raw=true "Compilation times")
+
 | n | methods | extensions |
 | ---: | ---: | ---: |
 |100 | 0,15 | 0,15 |
