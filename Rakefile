@@ -13,7 +13,7 @@ task :generate do
   FileUtils.mkdir_p BUILD_DIR
   methods = USE_EXTENSIONS ? 1 : num_tests
   extensions = USE_EXTENSIONS ? num_tests : 0
-  method_body = "for var i = 0; i < n; i++ { println(i + 2) }; println(\"finished\")"
+  method_body = "for i in 1...n { print(i + n); }; print(\"finished\")"
   File.open(BUILD_DIR + "main.swift", 'w') do |f|
     f.puts "class MyClass {"
     f.puts "var n = 1000"
